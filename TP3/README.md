@@ -155,7 +155,7 @@ Installing: nginx
 
 🌞 **Démarrer le service NGINX**
 
-```
+```bash
 [bjorn@node1 ~]$ sudo systemctl start nginx
 [sudo] password for bjorn:
 [bjorn@node1 ~]$ systemctl status nginx
@@ -212,7 +212,6 @@ $ curl http://10.3.1.11:80 | head -n 7
     <title>HTTP Server Test Page powered by: Rocky Linux</title>
     <style type="text/css">
 ```
-
 
 ## 2. Analyser la conf de NGINX
 
@@ -299,7 +298,6 @@ $ curl http://10.3.1.11:24932  2> /dev/null
 [bjorn@node1 ~]$ cat /usr/lib/systemd/system/sshd.service | grep ExecStart=
 ExecStart=/usr/sbin/sshd -D $OPTIONS
 ```
-
 
 🌞 **Afficher le fichier de service NGINX**
 
